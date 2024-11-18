@@ -11,10 +11,6 @@ export default function Home() {
     setStartGame(!startGame);
   };
 
-  const handleStreamClick = () => {
-    setUseStream(!useStream);
-  };
-
   return (
     <div className="w-full h-screen">
       {startGame ? (
