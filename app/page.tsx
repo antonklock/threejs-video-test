@@ -1,6 +1,7 @@
 "use client";
 
 import InteractiveVideoPlayer from "@/components/InteractiveVideoPlayer";
+import VideoStatus from "@/components/VideoStatus";
 import { useState } from "react";
 
 export default function Home() {
@@ -19,18 +20,12 @@ export default function Home() {
     <div className="w-full h-screen">
       {startGame ? (
         <div className="w-full h-screen">
-          <InteractiveVideoPlayer useStream={useStream} />
+          <InteractiveVideoPlayer />
           <button
             onClick={handleStartGame}
             className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-white hover:text-gray-800 transition-colors duration-200"
           >
             Stop Game
-          </button>
-          <button
-            onClick={handleStreamClick}
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-white hover:text-gray-800 transition-colors duration-200"
-          >
-            {useStream ? "Use local video" : "Use streamed video"}
           </button>
         </div>
       ) : (
