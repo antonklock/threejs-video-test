@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Plane } from "@react-three/drei";
 import { Euler, Vector3 } from "@react-three/fiber";
 import { VideoTexture } from "three";

@@ -1,7 +1,6 @@
 "use client";
 
 import InteractiveVideoPlayer from "@/components/InteractiveVideoPlayer";
-import VideoStatus from "@/components/VideoStatus";
 import { useState } from "react";
 
 export default function Home() {
