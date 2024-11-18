@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export default function Home() {
   const [startGame, setStartGame] = useState(false);
-  const [useStream, setUseStream] = useState(false);
 
   const handleStartGame = () => {
     setStartGame(!startGame);
